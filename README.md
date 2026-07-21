@@ -1,4 +1,4 @@
-# IsCut (Is Semantic Cutter) 是语切词
+# DictCut
 
 通过指定词表与语料，以冷启动+EM+剪枝流程学习适配词表子集与词频，构建非监督切词器。
 
