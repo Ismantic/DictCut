@@ -136,6 +136,11 @@ scripts/       - 训练流程（字频统计、词表过滤、EM）
 dict.txt       - 当前默认词频词典
 ```
 
+## 原理文档
+
+DAG 建图、最大概率路径、词频训练和词表剪枝的完整讲解见《底层实现：文本处理》的
+[中文分词：基础篇](https://ismantic.github.io/text/dictcut.html)。
+
 ## License
 
 MIT
