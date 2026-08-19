@@ -79,7 +79,7 @@ make filter     # 按规则过滤，生成 dict.raw
 
 ```bash
 cd data
-make download   # 下载 finewiki(zhwiki) + roots_zh_wikinews
+make download   # 下载 finewiki(zhwiki)
 make process    # 繁简转换，合并为 data.txt
 ```
 

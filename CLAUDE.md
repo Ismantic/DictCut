@@ -33,7 +33,7 @@ CLI modes in `main.cc`: `--pipe`, `--segment` (longest-match via `Segmenter`), `
 Full pipeline to retrain the dictionary from scratch:
 
 1. **Build dictionary** (`cd dict && make`) — downloads Wikimedia title dumps, converts traditional→simplified, filters by length rules
-2. **Fetch corpus** (`cd data && make`) — downloads Chinese Wikipedia/Wikinews from HuggingFace, converts to simplified, splits into sentences
+2. **Fetch corpus** (`cd data && make`) — downloads Chinese Wikipedia from HuggingFace, converts to simplified, splits into sentences
 3. **Train** (`cd scripts && make`) — character frequency counting, dict filtering, EM training with pruning
 
 Training requires `datasets`, `huggingface_hub[cli]`, `opencc` Python packages. Control vocab size and EM sub-iterations with `make VOCAB_SIZE=100000 SUB_ITERS=3`.
