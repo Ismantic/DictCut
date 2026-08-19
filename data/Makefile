@@ -1,16 +1,13 @@
 all: download process sentences.txt
 
-download: data/zhwiki.jsonl data/zh_wikinews.jsonl
+download: data/zhwiki.jsonl
 
 data/zhwiki.jsonl:
 	python3 fetch_finewiki.py
 
-data/zh_wikinews.jsonl:
-	python3 fetch_wikinews.py
-
 process: data.txt
 
-data.txt: data/zhwiki.jsonl data/zh_wikinews.jsonl
+data.txt: data/zhwiki.jsonl
 	python3 process.py
 
 sentences.txt: data.txt

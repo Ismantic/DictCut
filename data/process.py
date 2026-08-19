@@ -15,7 +15,6 @@ import opencc
 
 SOURCES = [
     ("zhwiki.jsonl", "text"),
-    ("zh_wikinews.jsonl", "text"),
 ]
 
 

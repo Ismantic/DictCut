@@ -1,0 +1,13 @@
+# Python dependencies for the dict/data/scripts pipelines (see CLAUDE.md).
+# The core C++ segmenter has no Python runtime dependencies; these are only
+# needed to rebuild the dictionary and retrain word frequencies from scratch.
+
+# dict/ — Wikimedia dump fetching & filtering (mediawiki.py, convert.py)
+requests>=2.31
+tenacity>=8.2
+regex>=2023.10.3
+opencc>=1.1.6
+
+# data/ — corpus fetching (fetch_finewiki.py) and processing (process.py)
+datasets>=2.19
+huggingface_hub>=0.23
